@@ -1,0 +1,112 @@
+.about_us_first_container {
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+}
+.aboutus_container {
+  width: 100%;
+}
+.second_content {
+  width: 700px;
+}
+.about_us_second_container {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5rem;
+  // display: flex;
+  // flex-direction: column;
+  color: white;
+}
+
+.why_us_second_content {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.why_us_wrap_wrapper {
+  width: 180px;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+
+  div {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    margin: 1rem 0;
+  }
+}
+
+//PageReveal
+
+.testPage header {
+  height: 200vh;
+}
+
+.testPage_container {
+  clip: rect(0, auto, auto, 0);
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+}
+
+.testPage_container_solid {
+  background: black;
+
+  /* position this container at the top of its parent element */
+  top: 0;
+}
+
+.testPage_title_wrapper {
+  position: fixed;
+  display: block;
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.testPage_title_wrapper h1 {
+  text-align: center;
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+.testPage_container_solid .testPage_title_wrapper h1 {
+  /* the text background */
+  background-repeat: no-repeat;
+
+  background: url(https://metro.co.uk/wp-content/uploads/2016/05/giphy-3.gif);
+  // background-size: 100vw auto;
+  background-size: contain;
+  background-position: center;
+
+  /* clip the text is possible */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  /* fallback text color */
+  color: black;
+}
+
+.testPage_container_image {
+  background-image: url(https://metro.co.uk/wp-content/uploads/2016/05/giphy-3.gif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  top: 100vh;
+}
+
+.testPage_container_image .testPage_title_wrapper h1 {
+  color: white;
+}

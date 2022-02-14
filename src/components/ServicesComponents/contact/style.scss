@@ -1,0 +1,63 @@
+.container{
+    padding: 30px;
+}
+.contact_text{
+//    display: flex;
+//    padding: 10px;
+  span{
+      margin-left: 20px;
+  }
+
+}
+.Textcontact{
+    color: white;
+    padding: 20px;
+
+    h1{
+width: 500px;
+font-size: 50px;
+font-weight: bold;
+    }
+    button{
+        padding: 7px 15px;
+        background-color: #ff0000;
+        font-size: 0.96rem;
+        border-color: #ff0000;
+        color: white;
+        border-radius: 5px;
+        margin-left: 90%;
+        
+        }
+    p{
+width: 680px;
+font-size: 20px;
+    }
+}
+.pText{
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-right: 100px;
+
+}
+
+form{
+    display: flex;
+
+    // padding: 20px;
+    input{
+        margin: 10px;
+        padding: 10px;
+        width: 400px;
+       
+    }
+}
+button{
+    padding: 7px 15px;
+    background-color: #ff0000;
+    font-size: 0.96rem;
+    border-color: #ff0000;
+    color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+    }

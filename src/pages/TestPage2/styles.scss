@@ -1,0 +1,55 @@
+.tespage2 {
+  html,
+  body {
+    background: #9bc8e1;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+  }
+  .scroll {
+    font: italic 700 84px/1.5 "playfair display";
+    color: #fbfdfe;
+    letter-spacing: 0.03em;
+  }
+  .bounce {
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+  }
+  .whitePlane {
+    transform: rotate(75deg);
+  }
+
+  .container {
+    position: relative;
+    width: 940px;
+    height: 3896.09px;
+    margin: 755px auto 1255px;
+    background: white;
+    overflow: hidden;
+  }
+
+  .plane {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: -36px;
+  }
+
+  .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #92d1ec;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+
+  #Layer_1 {
+    // stroke: black;
+    fill: none;
+    position: absolute;
+    max-width: 940px;
+    top: 0;
+    left: 0;
+  }
+}

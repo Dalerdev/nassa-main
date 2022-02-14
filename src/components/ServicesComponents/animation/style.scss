@@ -1,0 +1,11 @@
+.Animation{
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    img{
+        width: 180px;
+        padding: 30px;
+    }
+}

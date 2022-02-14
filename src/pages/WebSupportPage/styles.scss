@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+
+.webSupport {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+
+  .webSupport_first_content {
+    flex: 0.7;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #222;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    font-weight: 700;
+  }
+  .full {
+    height: 100vh;
+    background: #e0e0e0;
+  }
+  .half {
+    height: 50vh;
+    background: #e0e0e0;
+  }
+  .mini {
+    height: 25vh;
+    background: #e0e0e0;
+  }
+
+  .banner {
+    color: #e8e8e8;
+    display: flex;
+    align-items: stretch;
+  }
+
+  /* first banner */
+
+  .banner3d-1 {
+    width: 100%;
+    perspective: 700px;
+    -webkit-transform-style: flat; /* why would I do that? well there is a very strange bug with safari, and it fixed it... */
+    transform-style: preserve-3d;
+  }
+
+  .banner3d-1-front {
+    padding: 50px;
+    background: #222;
+    transform: translatez(50px);
+    transform-style: preserve-3d;
+  }
+
+  .banner3d-1-front:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #bfbfbf;
+    top: -50px;
+    transform-origin: center bottom;
+    transform: rotatex(90deg);
+  }
+
+  .banner3d-1-front:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #bfbfbf;
+    bottom: -50px;
+    transform-origin: center top;
+    transform: rotatex(-90deg);
+  }
+
+  /* second banner */
+
+  .banner3d-2 {
+    width: 100%;
+    perspective: 700px;
+    -webkit-transform-style: flat;
+    transform-style: preserve-3d;
+    z-index: -1;
+  }
+
+  .banner3d-2-front {
+    padding: 50px;
+    background: #222;
+    transform: translatez(-50px);
+    transform-style: preserve-3d;
+  }
+
+  .banner3d-2-front:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #bfbfbf;
+    top: -50px;
+    transform-origin: center bottom;
+    transform: rotatex(-90deg);
+  }
+
+  .banner3d-2-front:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #bfbfbf;
+    bottom: -50px;
+    transform-origin: center top;
+    transform: rotatex(90deg);
+  }
+
+  /* 3rd banner */
+
+  .banner3d-3 {
+    width: 50%;
+    perspective: 700px;
+    -webkit-transform-style: flat;
+    transform-style: preserve-3d;
+  }
+
+  .banner3d-3-front {
+    padding: 100px 25px;
+    text-align: center;
+    background: #222;
+    transform: translatez(50px);
+    transform-style: preserve-3d;
+  }
+
+  .banner3d-3-front:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #404040;
+    top: -50px;
+    transform-origin: center bottom;
+    transform: rotatex(90deg);
+  }
+
+  .banner3d-3-front:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #404040;
+    bottom: -50px;
+    transform-origin: center top;
+    transform: rotatex(-90deg);
+  }
+
+  .image {
+    width: 50%;
+    background: url(https://source.unsplash.com/IyaNci0CyRk/600x600) no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 25px 0px 20px 10px rgba(0, 0, 0, 0.41);
+  }
+
+  /* fourth banner */
+
+  .banner3d-4 {
+    width: 60%;
+    perspective: 700px;
+    -webkit-transform-style: flat;
+    transform-style: preserve-3d;
+    z-index: -1;
+  }
+
+  .banner3d-4-front {
+    padding: 25px;
+    background: #222;
+    transform: translatez(-50px);
+    transform-style: preserve-3d;
+  }
+
+  .banner3d-4-front:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #bfbfbf;
+    top: -50px;
+    transform-origin: center bottom;
+    transform: rotatex(-90deg);
+  }
+
+  .banner3d-4-front:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #bfbfbf;
+    bottom: -50px;
+    transform-origin: center top;
+    transform: rotatex(90deg);
+  }
+
+  .image2 {
+    width: 40%;
+    background: url(https://source.unsplash.com/gJJhG4gM7NA/600x600) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 20px solid #e0e0e0;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 991px) {
+    section {
+      font-size: 2em;
+    }
+    .banner {
+      flex-direction: column;
+    }
+    .banner3d-3,
+    .banner3d-4 {
+      width: 100%;
+    }
+    .image,
+    .image2 {
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
