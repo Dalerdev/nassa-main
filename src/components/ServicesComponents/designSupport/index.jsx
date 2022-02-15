@@ -1,7 +1,9 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./styles.scss";
-import Carousel from "react-bootstrap/Carousel";
+// import Carousel from "react-bootstrap/Carousel";
+import Carousel from "@brainhubeu/react-carousel";
+import "@brainhubeu/react-carousel/lib/style.css";
 import AnimationPage from "../animationPage";
 import ContactForm from "../contact";
 function DesingSupport() {
@@ -91,28 +93,15 @@ function DesingSupport() {
        
 
       </Container>
-      <Carousel variant="dark">
-        <Carousel.Item>
-          <img 
-            className="d-block "
-            src="https://xspace.uz/wp-content/uploads/2020/06/0000000-min-1536x1049.png"
-            alt=""
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block "
-            src="https://xspace.uz/wp-content/uploads/2020/06/00000000-min.png"
-            alt=""
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block "
-            src="https://xspace.uz/wp-content/uploads/2020/06/000000000-min-1536x1049.png"
-            alt=""
-          />
-        </Carousel.Item>
+      <Carousel className="padding_carousel">
+        <img
+          style={{ width: "700px" }}
+          src="https://xspace.uz/wp-content/uploads/2020/06/000000000-min-1536x1049.png"
+        />
+        <img style={{ width: "700px" }} src="https://xspace.uz/wp-content/uploads/2020/06/0000000-min-1536x1049.png" />
+        <img style={{ width: "700px" }} src="https://xspace.uz/wp-content/uploads/2020/06/00000000-min-1536x1049.png" />
+        <img style={{ width: "700px" }} src="https://xspace.uz/wp-content/uploads/2020/06/00000000-min-1536x1049.png" />
+        <img style={{ width: "700px" }} src="https://xspace.uz/wp-content/uploads/2020/06/00000000-min-1536x1049.png" />
       </Carousel>
       <AnimationPage/>
       <ContactForm/>

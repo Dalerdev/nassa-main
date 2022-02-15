@@ -41,23 +41,23 @@ margin-right: 100px;
 
 }
 
-form{
-    display: flex;
 
-    // padding: 20px;
+
+    
     input{
         margin: 10px;
         padding: 10px;
-        width: 400px;
+        width: 100%;
        
     }
-}
-button{
+
+    .submit_button{
     padding: 7px 15px;
     background-color: #ff0000;
     font-size: 0.96rem;
     border-color: #ff0000;
     color: white;
     border-radius: 5px;
-    margin-left: 20px;
+    // margin-left: 20px;
+    margin-top: 20px;
     }

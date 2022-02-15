@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@brainhubeu/react-carousel": "^2.0.4",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -28,6 +29,7 @@
     "react-i18next": "^11.15.3",
     "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.33.1",
+    "react-items-carousel": "^2.8.0",
     "react-redux": "^7.2.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.0",
